@@ -11,15 +11,15 @@ A tiny javascript framework for unit tests
 
 - Assert function via html using checkAssert(condition, "message");
 - Assert function via console.log using checkAssertLog(condition, "message");
-- test set  function via html using checkTest("name of test", function calling asserts via assert() function)
-- asynchronous/callback test set via html using checkTestAsync("name of test", function calling asserts via assertAsync() function)
+- Test set  function via html using checkTest("name of test", function calling asserts via assert() function);
+- asynchronous/callback test set via html using checkTestAsync("name of test", function calling asserts via assertAsync() function).
 
 
 See some examples in Examples folder.
 
 # How to contribute:
 
-- 1- Fork the repository
-- 2- Create an issue
-- 3- Add a doc/function/fix
-- 4- create a pull request
+- 1- Fork the repository;
+- 2- Create an issue;
+- 3- Add a doc/function/fix;
+- 4- create a pull request.
