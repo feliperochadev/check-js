@@ -5,9 +5,9 @@ A tiny javascript framework for unit tests
 
 # How to use step by step:
 
-- 1- download checkjs-1.0.js file
-- 2- put the file in a html page
-- 3- call the functions of test and assert
+- 1- Download checkjs-1.0.js [LINK](https://raw.githubusercontent.com/feliperochadev/check-js/master/checkjs-1.0.js)
+- 2- Put or reference the file in a html page
+- 3- Call the functions of test and assert
 
 # Features:
 
