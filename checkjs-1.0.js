@@ -56,7 +56,7 @@ function msie() {
         }
         return li;
     };
-    this.checkTest = function test(name, fn) {
+    this.checkTest = function checkTest(name, fn) {
         results = document.getElementById("check-results");
         results = assert(true, name).appendChild(document.createElement("ul"));
         fn();
