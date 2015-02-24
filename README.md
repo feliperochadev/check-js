@@ -28,11 +28,11 @@ A tiny javascript framework for unit tests
   Test a set of asynchronous/callback assertions, using assertAsync() inside the parameter function() for each assertion.
   
   
-See some examples in Examples folder.
+Check out Examples folder for more details.
 
 # How to contribute:
 
 - 1- Fork the repository;
 - 2- Create an issue;
 - 3- Add a doc/function/fix;
-- 4- create a pull request.
+- 4- Create a pull request.
