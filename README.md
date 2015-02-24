@@ -21,11 +21,11 @@ A tiny javascript framework for unit tests
 
 - checkTest("name of test", function())
 
-  Test a set of assertions, using assert for each assert inside the parameter function().
+  Test a set of assertions, using assert() inside the parameter function() for each assertion.
 
 - checkTestAsync("name of test", function())
 
-  Test a set of asynchronous/callback assertions, using assertAsync() for each assert inside the parameter function().
+  Test a set of asynchronous/callback assertions, using assertAsync() inside the parameter function() for each assertion.
   
   
 See some examples in Examples folder.
