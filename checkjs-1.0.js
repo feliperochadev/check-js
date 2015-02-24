@@ -1,3 +1,9 @@
+/*
+ Check-JS: A tiny javascript framework for unit tests
+ version: 1.0
+ Created by: @feliperocha
+ Enjoy, contribute :)
+ */
 //create the container with the ul results
 window.addEventListener("load",function ()
 {
