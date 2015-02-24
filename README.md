@@ -1,4 +1,4 @@
-# check-js
+# Check-JS
 A tiny javascript framework for unit tests
 
 # How to use step by step:
@@ -16,3 +16,10 @@ A tiny javascript framework for unit tests
 
 
 See some examples in Examples folder.
+
+# How to contribute:
+
+- 1- Fork the repository
+- 2- Create an issue
+- 3- Add a doc/function/fix
+- 4- create a pull request
