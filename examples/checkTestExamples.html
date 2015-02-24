@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="checkjs-1.0.js"></script>
+</head>
+<body>
+
+<script>
+    onload = function() {
+        checkTest("First Test:", function(){
+            assert(3*2 == 6, "First assertion of first test completed");
+            assert(5^2 == 25, "Second assertion of first test completed");
+        });
+        checkTest("Second Test:", function(){
+            assert("second".length == 6, "First assertion of second test completed");
+            assert("abc".indexOf("d") > 0, "Second assertion of second test failed");
+            assert(true, "Third assertion of second test completed");
+        });
+        checkTest("Third test:",function()
+        {
+            assert(null, "First assertion of third test completed");
+            assert(false == true, "Second assertion of third test completed");
+        });
+    };
+</script>
+</body>
+</html>
