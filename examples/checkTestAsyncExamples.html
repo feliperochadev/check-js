@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="checkjs-1.0.js"></script>
+<script>
+    window.onload = function()
+    {
+        checkTestAsync("First Async Test", function()
+        {
+            pause();
+            setTimeout(function()
+            {
+                assertAsync(true, "First assertion of First Test");
+                resume();
+            }, 1000);
+            pause();
+            setTimeout(function()
+            {
+                assertAsync((20*2)/2 == 20, "Second assertion of First Test");
+                resume();
+            }, 1000);
+        });
+        checkTestAsync("Second Async Test", function()
+        {
+            pause();
+            setTimeout(function()
+            {
+                assertAsync(5*10==50, "First assertion of Second Test");
+                resume();
+            }, 1000);
+            pause();
+            setTimeout(function()
+            {
+                var resultCallback = false;
+                assertAsync(resultCallback, "Second assertion of Second Test");
+                resume();
+            }, 2000);
+        });
+    }
+
+</script>
+</body>
+</html>

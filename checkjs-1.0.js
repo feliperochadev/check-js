@@ -56,3 +56,47 @@ function msie() {
         fn();
     }
 })();
+(function(){
+    var queue = [], paused = false, results;
+    this.checkTestAsync = function(name, fn){
+        queue.push(function(){
+            results = document.getElementById("check-results-container");
+            results = assertAsync(true, name).appendChild(
+                document.createElement("ul")
+            );
+            fn();
+        });
+        runTest();
+    }
+    this.pause = function()
+    {
+        paused = true;
+    };
+    this.resume = function()
+    {
+        paused = false;
+        setTimeout(runTest, 1);
+    }
+    function runTest()
+    {
+        if (!paused && queue.length){
+            queue.shift()();
+            if(!paused)
+            {
+                resume();
+            }
+        }
+    }
+    this.assertAsync = function assertAsync(value, desc)
+    {
+        var li = document.createElement("li");
+        li.style.color = value ? "green" : "red";
+        li.appendChild(document.createTextNode(desc));
+        results.appendChild(li);
+        if (!value)
+        {
+            li.parentNode.parentNode.style.color = "red";
+        }
+        return li;
+    }
+})();
