@@ -1,68 +1,83 @@
 <!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Check-js by feliperochadev</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/feliperochadev/check-js">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/feliperochadev/check-js/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/feliperochadev/check-js/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-  <title>Check-js</title>
-  <meta name="description" content="A tiny javascript framework for unit tests">
+    <div class="wrapper">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Check-js</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">A tiny javascript framework for unit tests</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/feliperochadev/check-js/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/feliperochadev/check-js/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/feliperochadev/check-js" class="code">View Check-js on GitHub</a>
+      <section>
+        <div id="title">
+          <h1>Check-js</h1>
+          <p>A tiny javascript framework for unit tests</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/feliperochadev">feliperochadev</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
+
+        <h3>
 <a id="welcome-to-check-js-project" class="anchor" href="#welcome-to-check-js-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Check-JS project.</h3>
 
 <p>A tiny javascript framework for unit tests:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-</code></pre>
-        </article>
-      </div>
+<h1>
+<a id="how-to-use-step-by-step" class="anchor" href="#how-to-use-step-by-step" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use step by step:</h1>
+
+<ul>
+<li>1- download checkjs-1.0.js file or use this <a href="https://raw.githubusercontent.com/feliperochadev/check-js/master/checkjs-1.0.js">LINK</a>
+</li>
+<li>2- put the file in a html page</li>
+<li>3- call the functions of test and assert</li>
+</ul>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features:</h1>
+
+<ul>
+<li>Assert function via html using checkAssert(condition, "message");</li>
+<li>Assert function via console.log using checkAssertLog(condition, "message");</li>
+<li>Test set  function via html using checkTest("name of test", function calling asserts via assert() function)</li>
+<li>Asynchronous/callback test set via html using checkTestAsync("name of test", function calling asserts via assertAsync() function);</li>
+</ul>
+
+<p>See some examples in Examples folder.</p>
+
+<h1>
+<a id="how-to-contribute" class="anchor" href="#how-to-contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to contribute:</h1>
+
+<ul>
+<li>1- Fork the repository;</li>
+<li>2- Create an issue;</li>
+<li>3- Add a doc/function/fix;</li>
+<li>4- create a pull request.</li>
+</ul>
+      </section>
+
     </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/feliperochadev" class="avatar"><img src="https://avatars3.githubusercontent.com/u/5233005?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/feliperochadev">feliperochadev</a> maintains <a href="https://github.com/feliperochadev/check-js">Check-js</a></p>
-
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/feliperochadev/check-js/tarball/master" class="tar">tar</a><a href="https://github.com/feliperochadev/check-js/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-  
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
 </html>
