@@ -1,7 +1,7 @@
 /*
  Check-JS: A tiny javascript framework for unit tests
  version: 1.0
- Created by: @feliperochadec
+ Created by: @feliperochadev
  Enjoy, feedback and contribute.
  */
 //create the container with the ul results
