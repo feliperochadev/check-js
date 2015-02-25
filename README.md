@@ -39,8 +39,8 @@ Check out Examples folder for more details.
 
 # Release History
 
-- 2015-02-15   v1.0   Modularized framework
-- 2015-02-12   v1.1   Release usable version
+- 2015-02-15   v1.1   Modularized framework
+- 2015-02-12   v1.0   Release usable version
 
 # Old Versions:
 
