@@ -37,6 +37,11 @@ Check out Examples folder for more details.
 - 3- Add a doc/function/fix;
 - 4- Create a pull request.
 
+# Release History
+
+- 2015-02-15   v1.0   Modularized framework
+- 2015-02-12   v1.1   Release usable version
+
 # Old Versions:
 
 - [1.0](https://rawgit.com/feliperochadev/check-js/master/src/old-versions/checkjs-1.0.js)
