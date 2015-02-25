@@ -5,27 +5,27 @@ A tiny javascript framework for unit tests
 
 # How to use step by step:
 
-- 1- Download checkjs-1.0.js [LINK](https://cdn.rawgit.com/feliperochadev/check-js/master/checkjs-1.0.js);
+- 1- Download checkjs-1.1.js [LINK](https://cdn.rawgit.com/feliperochadev/check-js/master/src/checkjs-1.1.js);
 - 2- Reference the file or link in a html page;
 - 3- Call the functions of test and assert.
 
 # Features:
 
-- checkAssert(condition, "message")
+- checkJS.assert(condition, "message")
 
   Assert function via html.
 
-- checkAssertLog(condition, "message")
+- checkJS.assertLog(condition, "message")
 
   Assert function via console.log.
 
-- checkTest("name of test", function())
+- checkJS.test("name of test", function())
 
-  Test a set of assertions, using assert() inside the parameter function() for each assertion.
+  Test a set of assertions, using checkJS.assert inside the parameter function() for each assertion.
 
-- checkTestAsync("name of test", function())
+- checkJS.asyncTest("name of test", function())
 
-  Test a set of asynchronous/callback assertions, using assertAsync() inside the parameter function() for each assertion.
+  Test a set of asynchronous/callback assertions, using checkJS.assert inside the parameter function() for each assertion.
   
   
 Check out Examples folder for more details.
@@ -36,3 +36,7 @@ Check out Examples folder for more details.
 - 2- Create an issue;
 - 3- Add a doc/function/fix;
 - 4- Create a pull request.
+
+# Old Versions:
+
+- [1.0](https://rawgit.com/feliperochadev/check-js/master/src/old-versions/checkjs-1.0.js)
