@@ -3,45 +3,48 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-</head>
-<body>
-<script src="https://cdn.rawgit.com/feliperochadev/check-js/master/checkjs-1.0.js"></script>
-<script>
+    <script src="checkjs-1.0.js"></script>
+    <script>
     window.onload = function()
     {
-        checkTestAsync("First Async Test", function()
+        checkJS.asyncTest("First Async Test", function()
         {
-            pause();
+            checkJS.pause;
             setTimeout(function()
             {
-                assertAsync(true, "First assertion of First Test");
-                resume();
+                checkJS.assert(true, "First assertion of First Test");
+                checkJS.resume;
             }, 1000);
-            pause();
+            checkJS.pause;
             setTimeout(function()
             {
-                assertAsync((20*2)/2 == 20, "Second assertion of First Test");
-                resume();
-            }, 1000);
-        });
-        checkTestAsync("Second Async Test", function()
-        {
-            pause();
-            setTimeout(function()
-            {
-                assertAsync(5*10==50, "First assertion of Second Test");
-                resume();
-            }, 1000);
-            pause();
-            setTimeout(function()
-            {
-                var resultCallback = false;
-                assertAsync(resultCallback, "Second assertion of Second Test");
-                resume();
+                checkJS.assert((20*2)/2 == 20, "Second assertion of First Test");
+                checkJS.resume;
             }, 2000);
         });
-    }
-
+        setTimeout(function()
+        {
+            checkJS.asyncTest("Second Async Test", function()
+            {
+                checkJS.pause;
+                setTimeout(function()
+                {
+                    checkJS.assert(5*10==50, "First assertion of Second Test");
+                    checkJS.resume;
+                }, 1000);
+                checkJS.pause;
+                setTimeout(function()
+                {
+                    var resultCallback = false;
+                    checkJS.assert(resultCallback, "Second assertion of Second Test");
+                    checkJS.resume;
+                }, 2000);
+            });
+        }, 2500);
+}
 </script>
+</head>
+<body>
+
 </body>
 </html>

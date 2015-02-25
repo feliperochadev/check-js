@@ -3,16 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="https://cdn.rawgit.com/feliperochadev/check-js/master/checkjs-1.0.js"></script>
-</head>
-<body>
-<script>
-    //Tests where
-    //The first argument is the conditional expression and the second is the description of assert
-    function tests () {
-        checkAssert(1 + 1, "one plus one equals two");
+    <script src="checkjs-1.0.js"></script>
+    <script>
+    window.onload = function () {
+        checkJS.assert(1 + 1, "one plus one equals two");
 
-        checkAssert((function() {
+        checkJS.assert((function() {
             var result = 0;
             for (var n = 0; result < 10; n++) {
                 result++;
@@ -20,11 +16,12 @@
             return result;
         })() == 10, "this function loops ten times");
 
-        checkAssert(10 % 3 == 0, "the rest of division is zero");
+        checkJS.assert(10 % 3 == 0, "the rest of division is zero");
     };
+    </script>
+</head>
+<body>
 
-    window.onload = tests;
-</script>
 </body>
 
 </html>
