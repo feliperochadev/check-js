@@ -40,7 +40,7 @@ Check out Examples folder for more details.
 # Release History
 
 - 2015-02-25   v1.1   Modularized framework
-- 2015-02-22   v1.0   Release usable version
+- 2015-02-23   v1.0   Release usable version
 
 # Old Versions:
 
