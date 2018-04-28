@@ -3,7 +3,7 @@ A tiny javascript framework for unit tests
 
 [Project Site](http://feliperochadev.github.io/check-js/)
 
-testRebase1
+testRebase2
 
 # How to use step by step:
 
