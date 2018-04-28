@@ -3,7 +3,6 @@ A tiny javascript framework for unit tests
 
 [Project Site](http://feliperochadev.github.io/check-js/)
 
-test2
 
 # How to use step by step:
 s
