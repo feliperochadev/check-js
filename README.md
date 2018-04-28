@@ -3,6 +3,8 @@ A tiny javascript framework for unit tests
 
 [Project Site](http://feliperochadev.github.io/check-js/)
 
+testC
+
 # How to use step by step:
 
 - 1- Download checkjs-1.1.js [LINK](https://cdn.rawgit.com/feliperochadev/check-js/master/src/checkjs-1.1.js);
